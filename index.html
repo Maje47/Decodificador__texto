@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodificadorTexto</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+
+</head>
+
+<body class="body">
+    <header class="cabecalho">
+
+        <div clas="logo__Alura">
+            <div>
+                <p><strong>CRIPTOGRAFIA & DESCRIPTOGRAFIA</strong> </p>
+            </div>
+            <img src="assets/Aluracanva.png" alt="Logo alura" width="120" height="120">
+            <div class="cabecalho__link">
+                <ul>
+                    <h1><a class="codificador__menu__cabecalho" href="index.html">Home</a></h1>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="apresentacao">
+        <div class="left-side">
+            <h1> <strong>DECODIFICADOR DE TEXTO</strong></h1>
+            <textarea class="text-input" id="inputText" placeholder="Digite seu texto aqui..."></textarea>
+            <div class="options">
+                <input type="checkbox" id="lowercaseOption">
+                <label for="lowercaseOption">Propriedades</label>
+            </div>
+            <ul>
+                <li>Apenas com letras minúsculas</li>
+                <li>Letras sem acentos, nem caracteres especiais</li>
+                <li>É possível converter uma palavra criptografada para a versão original</li>
+            </ul>
+            <button class="btn btn-cripto" onclick="criptografar()">Descriptografar</button>
+            <button class="btn btn-descripto" onclick="descriptografar()">Criptografar</button>
+        </div>
+
+        <nav>
+            <div>
+                <img src="assets/img cripto.png"
+                    alt="imagem de um cadeado que simboliza que a informação é criptografada">
+                <div class="message-box">
+                    <p>Parabéns! você consegiu criptografar </p>
+                    <p>Vamos descriptografar agora.</p>
+                    <div class="img__cript">
+
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </div>
+
+    <div class="right-side">
+
+        <textarea class="result-text" id="resultText" readonly=""></textarea>
+        <div>
+            <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+        </div>
+        <button class="btn btn-cripto" onclick="criptografar()">Criptografar</button>
+        <button class="btn btn-descripto" onclick="descriptografar()">Descriptografar</button>
+        <div id="resultArea" class="result">
+            <div class="paragrafo">
+                <p> <strong> Seja bem Bem-Vindo!</strong></p>
+                <p1><strong> Ao Codificador e Decodificador de Texto</strong>
+                <strong>Nossa ferramenta permite codificação e decodificação de seu texto,já codificados.</strong>Seja para garantir a privacidade das informações, transmitir dados de forma segura ou trabalhar com linguagens específicas, nós estamos aqui para ajudar.</p1>
+                <div>
+                <p3><strong> Funcionalidades principais:</strong></p3>
+                </div>
+                <p4>
+                    <ul>
+                        <li>Codificação de Texto: Converta seu texto em codigo seguro.</li>
+                        <li>Decodificação de Texto: Restaure textos codificados para seu formato original</li>
+                        <li>Suporte a Vários Algoritmos: Escolha entre diversas opções de codificação conforme suas
+                            necessidades</li>
+                        <li>Comece inserindo o texto e escolha a codificação desejada. Simples, rápido e eficiente!</li>
+                    </ul>
+                </p4>
+            </div>
+            <div class="img__cripto"></div>
+        </div>
+
+    </div>
+
+    <footer class="rodape">
+        <div>
+            <p> Jesus Moraes X Alura X ONE.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
